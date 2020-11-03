@@ -1,0 +1,126 @@
+:root {
+   /* headings */
+   --h1-home: 70px;
+   --h3-home: 24px;
+   --h1-size: 40px;
+   --h2-size: 30px;
+   --h3-size: 20px;
+   --h4-size: 18px;
+   --h5-size: 60px;
+   /* paragraphs */
+   --para1-size: 18px;
+   --para2-size: 16px;
+   --para3-size: 14px;
+   --para4-size: 24px;
+   /* colors */
+   --main-color: #ffffff;
+   --sec-color: #fab518;
+   --light-main-color: #fab6187e;
+   --third-color: #EE7425;
+}
+@media only screen and (max-width: 1024px) {
+   :root {
+      /* headings */
+      --h1-home: 40px;
+      --h3-home: 18px;
+      --h1-size: 30px;
+      --h2-size: 20px;
+      --h3-size: 20px;
+      --h4-size: 16px;
+      --h5-size: 60px;
+      /* paragraphs */
+      --para1-size: 15px;
+      --para2-size: 14px;
+      --para3-size: 13px;
+      --para4-size: 24px;
+   }
+   .first {
+      order: 1;
+   }
+   .second {
+      order: 2;
+   }
+}
+@font-face {
+   font-family: "arial rounded bold";
+   src: url("../assets/fonts/ARLRDBD.TTF");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.ttf");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.eot");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.woff");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.woff2");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.ttf");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.eot");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff2");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.ttf");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.eot");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.woff");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
+}
+@import "_contact.css";
+body,
+div {
+   font-family: "arial nova light";
+}
+html {
+   scroll-behavior: smooth;
+}
+h3 {
+   font-size: var(--h3-size);
+}
+
+.carousel-inner img {
+   min-width: 100%;
+   min-height: 100%;
+}
+
+#demo {
+   height: 100%;
+   overflow: hidden;
+}
+
+.my-header {
+   height: 100vh;
+}
+
+.navigation {
+   position: fixed;
+   z-index: 111;
+
+}
