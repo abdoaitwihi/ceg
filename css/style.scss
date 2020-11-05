@@ -8,13 +8,13 @@
    --h4-size: 18px;
    --h5-size: 60px;
    /* paragraphs */
-   --para1-size: 18px;
+   --para1-size: 20px;
    --para2-size: 16px;
    --para3-size: 14px;
    --para4-size: 24px;
    /* colors */
-   --main-color: #ffffff;
-   --sec-color: #fab518;
+   --main-color: #F3F7FF;
+   --sec-color: #002941;
    --light-main-color: #fab6187e;
    --third-color: #EE7425;
 }
@@ -32,7 +32,7 @@
       --para1-size: 15px;
       --para2-size: 14px;
       --para3-size: 13px;
-      --para4-size: 24px;
+      --para4-size: 18px;
    }
    .first {
       order: 1;
@@ -93,7 +93,9 @@
    font-family: "arial nova light";
    src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
 }
-@import "_contact.css";
+@import "header";
+@import "home";
+@import "bg";
 body,
 div {
    font-family: "arial nova light";
@@ -118,9 +120,50 @@ h3 {
 .my-header {
    height: 100vh;
 }
+.primary-button {
+   padding: 10px;
+   border: solid 1px white;
+   background-color: transparent ;
+   color: white;
+   &:hover {
+      text-decoration: none;
+   }
+}
+.sec-button {
+   text-transform: uppercase;
+   color: white;
+   img {
+      height: 9px;
+      width: 26px;
+      transform: translateY(-1px);
+      margin-left: 1px;
+   }
+   &:hover {
+      text-decoration: none;
+   }
+}
+.line-under {
+   position: relative;
+   display: inline;
+}
+.line-under::after {
+   content: "";
+   height: 5px;
+   width: 90px;
+   background-color: var(--sec-color);
+   display: block;
+   margin-top: 8px;
+   position: absolute;
+   left: 0;
+   border-radius: 10px;
+}
 
-.navigation {
-   position: fixed;
-   z-index: 111;
-
+.global-class {
+   h2 {
+     font-family: "arial rounded bold";
+     color: var(--sec-color);
+   }
+   p {
+      font-size: var(--para1-size);
+   }
 }

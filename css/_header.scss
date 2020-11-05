@@ -1,0 +1,62 @@
+.navigation {
+  position: fixed;
+  z-index: 111;
+  transition: .3s;
+  nav {
+    img {
+      height: 80px;
+      @media screen and (max-width : 576px) {
+        height: 75px; 
+      }
+      transition: .3s;
+    }
+    .navbar-toggler {
+      img {
+        height: 36px;
+        width: 36px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    transition: .3s;
+    a {
+      color: white;
+    }
+  }
+}
+.fixing {
+  height: 100%;
+  background-color: var(--sec-color);
+}
+.my-nav {
+  .active {
+    border: solid 1px white;
+    margin-right: 10px;
+    @media screen and (max-width : 992px) {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin: 10px;
+    }
+  }
+  .nav-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  .navbar-nav {
+    @media screen and (max-width : 992px) {
+      margin-top: 30px;
+    }
+  }
+}
+.nav-scrooled {
+  background-color: var(--sec-color);
+  box-shadow: 0 5px 10px black;
+  nav {
+    img {
+      height: 50px;
+    }
+    height: 90px;
+  }
+}

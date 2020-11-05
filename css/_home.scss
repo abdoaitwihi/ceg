@@ -1,0 +1,123 @@
+.carousel-caption-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  .my-inner {
+    color: white;
+    h1 {
+      font-family: "arial rounded bold";
+      font-size: var(--h1-home);
+    }
+    p {
+      font-size: var(--para4-size);
+    }
+  }
+}
+.carousel-indicators {
+  bottom: 70px;
+}
+.carousel-indicators {
+  li {
+    width: 12px;
+    height: 12px;
+    border: solid 2px white;
+    background: transparent;
+    border-radius: 50%;
+  }
+  .active {
+    background-color: white ;
+  }
+}
+.home-second {
+  background-color: var(--sec-color);
+  h2 {
+    color: white !important;
+  }
+  p {
+    color: white;
+  }
+  .line-under::after {
+    background-color: white !important;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: var(--h3-size);
+    color: white;
+  }
+}
+.section-3-home {
+  .sec-button {
+    color: var(--sec-color);
+  }
+  color: var(--sec-color);
+  background-color: #F3F7FF;
+}
+.my-under-line {
+  height: 6px;
+  width: 100%;
+}
+.hidden-para {
+  font-size: var(--para2-size) !important;
+  height: 0;
+  transition: .3s;
+  overflow: hidden;
+  @media screen and (max-width : 1024px) {
+    height: 90px;
+  }
+}
+.our-programmes-inner{
+  max-width: 400px;
+}
+.my-progrmmes-inner {
+  a img {
+    margin-top:-54px ;
+    transition: .3s;
+    opacity: 0;
+    @media screen and (max-width : 1024px) {
+      opacity: 1;
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+}
+.full-height {
+  height: 90px;
+}
+.our-prgrammes {
+  min-height: 450px;
+}
+.our-team-container {
+  position: relative;
+  min-height: 350px;
+  .over-lay {
+    position: absolute;
+    padding: 35px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.411);
+    opacity: 0;
+    &:hover {
+      opacity: .8;
+    }
+    .overlay-spacer {
+      width: 94px;
+      height: 11px;
+      background: red;
+      margin: auto;
+      border-radius: 10px;
+      margin-bottom: 23px;
+      margin-top: 29px;
+    }
+  }
+  .first-info {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+  }
+}
