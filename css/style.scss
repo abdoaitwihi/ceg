@@ -13,10 +13,10 @@
    --para3-size: 14px;
    --para4-size: 24px;
    /* colors */
-   --main-color: #F3F7FF;
+   --main-color: #f3f7ff;
    --sec-color: #002941;
    --light-main-color: #fab6187e;
-   --third-color: #EE7425;
+   --third-color: #ee7425;
 }
 @media only screen and (max-width: 1024px) {
    :root {
@@ -25,7 +25,7 @@
       --h3-home: 18px;
       --h1-size: 30px;
       --h2-size: 20px;
-      --h3-size: 20px;
+      --h3-size: 17px;
       --h4-size: 16px;
       --h5-size: 60px;
       /* paragraphs */
@@ -93,9 +93,13 @@
    font-family: "arial nova light";
    src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
 }
+@import "mixins";
 @import "header";
 @import "home";
 @import "bg";
+@import "contactus";
+@import "team";
+@import "programs";
 body,
 div {
    font-family: "arial nova light";
@@ -120,14 +124,9 @@ h3 {
 .my-header {
    height: 100vh;
 }
+
 .primary-button {
-   padding: 10px;
-   border: solid 1px white;
-   background-color: transparent ;
-   color: white;
-   &:hover {
-      text-decoration: none;
-   }
+   @include primary-button(10px, 10px);
 }
 .sec-button {
    text-transform: uppercase;
@@ -142,26 +141,62 @@ h3 {
       text-decoration: none;
    }
 }
-.line-under {
+@mixin lineUnder($lineUnderColor) {
    position: relative;
    display: inline;
+   color: $lineUnderColor !important;
+   &::after {
+      content: "";
+      height: 5px;
+      width: 90px;
+      background-color: $lineUnderColor;
+      display: block;
+      margin-top: 8px;
+      position: absolute;
+      left: 0;
+      border-radius: 10px;
+   }
 }
-.line-under::after {
-   content: "";
-   height: 5px;
-   width: 90px;
-   background-color: var(--sec-color);
-   display: block;
-   margin-top: 8px;
-   position: absolute;
-   left: 0;
-   border-radius: 10px;
+
+.line-under-secColor {
+   @include lineUnder(var(--sec-color));
+}
+.line-under-white {
+   @include lineUnder(white);
 }
 
 .global-class {
    h2 {
-     font-family: "arial rounded bold";
-     color: var(--sec-color);
+      font-family: "arial rounded bold";
+      color: var(--sec-color);
+   }
+   p {
+      font-size: var(--para1-size);
+   }
+   h3 {
+      font-family: "arial rounded bold";
+      font-size: var(--h3-size);
+   }
+}
+a:hover {
+   text-decoration: none;
+}
+.flesh-bleu {
+   color: var(--sec-color);
+}
+.small-para {
+   font-size: var(--para3-size) !important ;
+}
+.my-banner {
+   color: white;
+   height: 60vh;
+   h3 {
+      font-family: $arialRoundedBold;
+      font-size: var(--h3-home);
+   }
+   h1 {
+      font-family: $arialRoundedBold;
+      font-size: var(--h2-size);
    }
    p {
       font-size: var(--para1-size);

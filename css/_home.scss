@@ -1,123 +1,280 @@
 .carousel-caption-item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  .my-inner {
-    color: white;
-    h1 {
-      font-family: "arial rounded bold";
-      font-size: var(--h1-home);
-    }
-    p {
-      font-size: var(--para4-size);
-    }
-  }
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   .my-inner {
+      color: white;
+      h1 {
+         font-family: "arial rounded bold";
+         font-size: var(--h1-home);
+      }
+      p {
+         font-size: var(--para4-size);
+      }
+   }
 }
 .carousel-indicators {
-  bottom: 70px;
+   bottom: 70px;
 }
 .carousel-indicators {
-  li {
-    width: 12px;
-    height: 12px;
-    border: solid 2px white;
-    background: transparent;
-    border-radius: 50%;
-  }
-  .active {
-    background-color: white ;
-  }
+   li {
+      width: 12px;
+      height: 12px;
+      border: solid 2px white;
+      background: transparent;
+      border-radius: 50%;
+   }
+   .active {
+      background-color: white;
+   }
 }
 .home-second {
-  background-color: var(--sec-color);
-  h2 {
-    color: white !important;
-  }
-  p {
-    color: white;
-  }
-  .line-under::after {
-    background-color: white !important;
-  }
-  h3 {
-    text-transform: uppercase;
-    font-size: var(--h3-size);
-    color: white;
-  }
+   background-color: var(--sec-color);
+   h2 {
+      color: white !important;
+   }
+   p {
+      color: white;
+   }
+   h3 {
+      text-transform: uppercase;
+      font-size: var(--h3-size);
+      color: white;
+      font-family: "arial nova" !important;
+   }
 }
 .section-3-home {
-  .sec-button {
-    color: var(--sec-color);
-  }
-  color: var(--sec-color);
-  background-color: #F3F7FF;
+   .sec-button {
+      color: var(--sec-color);
+   }
+   color: var(--sec-color);
+   background-color: #f3f7ff;
 }
-.my-under-line {
-  height: 6px;
-  width: 100%;
+@mixin underline($backgroundColor) {
+   height: 6px;
+   width: 100%;
+   background-color: $backgroundColor;
+}
+.my-under-line-1 {
+   @include underline(red);
+}
+.my-under-line-2 {
+   @include underline(black);
+}
+.my-under-line-3 {
+   @include underline(green);
 }
 .hidden-para {
-  font-size: var(--para2-size) !important;
-  height: 0;
-  transition: .3s;
-  overflow: hidden;
-  @media screen and (max-width : 1024px) {
-    height: 90px;
-  }
+   font-size: var(--para2-size) !important;
+   height: 0;
+   transition: 0.3s;
+   overflow: hidden;
+   @media screen and (max-width: 1024px) {
+      height: 90px;
+   }
 }
-.our-programmes-inner{
-  max-width: 400px;
+.our-programmes-inner {
+   max-width: 400px;
 }
 .my-progrmmes-inner {
-  a img {
-    margin-top:-54px ;
-    transition: .3s;
-    opacity: 0;
-    @media screen and (max-width : 1024px) {
-      opacity: 1;
-    }
-  }
-  h2 {
-    text-transform: uppercase;
-  }
+   a img {
+      margin-top: -54px;
+      transition: 0.3s;
+      opacity: 0;
+      @media screen and (max-width: 1024px) {
+         opacity: 1;
+      }
+   }
+   h2 {
+      text-transform: uppercase;
+   }
 }
 .full-height {
-  height: 90px;
+   height: 90px;
 }
 .our-prgrammes {
-  min-height: 450px;
+   min-height: 450px;
 }
 .our-team-container {
-  position: relative;
-  min-height: 350px;
-  .over-lay {
-    position: absolute;
-    padding: 35px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transition: .3s;
-    background-color: rgba(0, 0, 0, 0.411);
-    opacity: 0;
-    &:hover {
-      opacity: .8;
-    }
-    .overlay-spacer {
-      width: 94px;
-      height: 11px;
-      background: red;
-      margin: auto;
-      border-radius: 10px;
-      margin-bottom: 23px;
-      margin-top: 29px;
-    }
-  }
-  .first-info {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-
-  }
+   position: relative;
+   min-height: 350px;
+   color: white;
+   .over-lay {
+      right: 0;
+      left: 0;
+      position: absolute;
+      padding: 35px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+      background-color: rgba(0, 0, 0, 0.658);
+      opacity: 0;
+      z-index: 10;
+      &:hover {
+         opacity: 0.8;
+      }
+      .overlay-spacer {
+         width: 94px;
+         height: 11px;
+         background: var(--sec-color);
+         margin: auto;
+         border-radius: 10px;
+         margin-bottom: 23px;
+         margin-top: 29px;
+      }
+   }
+   .first-info {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}
+.our-team {
+   .owl-nav {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      button {
+         width: 30px;
+         height: 30px;
+         background: #dbdbdb !important;
+         margin-left: 8px;
+         color: black;
+         &:hover {
+            background-color: #8d8d8d !important;
+         }
+         &:focus {
+            outline: none;
+         }
+      }
+   }
+   h3 {
+      margin-top: 22px;
+      color: white;
+      font-family: "arial nova bold";
+   }
+   p {
+      color: #ffffffbd;
+   }
+   .over-lay {
+      img {
+         width: 40px;
+         display: inline;
+      }
+      h4 {
+         color: white;
+         font-size: 20px;
+         margin-bottom: 25px;
+      }
+   }
+}
+.contact-info-inner {
+   img {
+      margin-right: 10px;
+   }
+   padding: 10px;
+   margin: 16px;
+   width: fit-content;
+   border: solid 1px transparent;
+   transition: 0.3s;
+   border-radius: 10px;
+   margin-left: 0;
+   &:hover {
+      border: solid 1px #00578d;
+      background-color: #00578d54;
+   }
+}
+.my-form {
+   label {
+      display: block;
+      margin-bottom: 0px;
+   }
+   .my-input {
+      @include my-input;
+   }
+}
+.home-contact {
+   color: white;
+   h2 {
+      color: white !important;
+   }
+}
+.submit-btn {
+   @include primary-button(20px, 10px);
+}
+.news-letter {
+   color: white;
+   h2 {
+      color: white !important;
+      font-size: var(--h2-size);
+   }
+   img {
+      transform: translateY(-6px);
+      margin-right: 16px;
+      height: 50px;
+      cursor: pointer;
+   }
+   .my-input {
+      @include my-input;
+      padding-top: 18px;
+   }
+   button {
+      @include primary-button(20px);
+   }
+}
+.footer {
+   padding-right: 0;
+   padding-left: 0;
+   button {
+      @include primary-button();
+   }
+   .contact-link {
+      @include primary-button();
+      color: white !important;
+   }
+   .secondary-button {
+      @include primary-button();
+      @include secondary-button;
+   }
+   .back-to-top-button {
+      img {
+         transform: rotate(90deg);
+         margin-left: 10px;
+      }
+   }
+   h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: white;
+      font-family: $arialNovaBold;
+      margin-bottom: 20px;
+   }
+   p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+   }
+   ul {
+      margin-top: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+         text-transform: uppercase;
+         a {
+            color: white;
+         }
+      }
+   }
+   .hr {
+      margin-top: 20px;
+      background-color: white;
+      height: 1px;
+      width: 100%;
+   }
 }

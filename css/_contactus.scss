@@ -1,0 +1,35 @@
+.contact-form-part {
+   .my-input {
+      @include my-input(black);
+   }
+   .submit-btn {
+      @include primary-button(20px, 10px, black);
+   }
+}
+.locations {
+   color: white;
+   h3 {
+      color: #029fff;
+      text-transform: uppercase;
+   }
+}
+.my-international-number {
+   p {
+      font-family: $arialRoundedBold;
+   }
+}
+.social-media-icons {
+   a {
+      padding: 10px;
+      margin-right: 10px;
+      border: solid 1px grey;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+   }
+   img {
+      transform: translate(0px, -3px);
+      width: 15px;
+      height: 19px;
+   }
+}

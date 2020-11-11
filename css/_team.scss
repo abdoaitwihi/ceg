@@ -1,0 +1,17 @@
+.team-section {
+   .social-media {
+      margin-top: 40px;
+   }
+}
+.get-in-touch {
+   h3,
+   p {
+      color: white;
+   }
+   a {
+      @include primary-button(10px, 10px, white);
+   }
+}
+#reveal-members {
+   cursor: pointer;
+}

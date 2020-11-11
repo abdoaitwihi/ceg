@@ -13,10 +13,10 @@
   --para3-size: 14px;
   --para4-size: 24px;
   /* colors */
-  --main-color: #F3F7FF;
+  --main-color: #f3f7ff;
   --sec-color: #002941;
   --light-main-color: #fab6187e;
-  --third-color: #EE7425;
+  --third-color: #ee7425;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -26,7 +26,7 @@
     --h3-home: 18px;
     --h1-size: 30px;
     --h2-size: 20px;
-    --h3-size: 20px;
+    --h3-size: 17px;
     --h4-size: 16px;
     --h5-size: 60px;
     /* paragraphs */
@@ -112,22 +112,23 @@
   src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
 }
 
+/* variables */
 .navigation {
   position: fixed;
   z-index: 111;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navigation nav {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navigation nav img {
   height: 80px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 576px) {
@@ -149,9 +150,21 @@
   color: white;
 }
 
+.navigation nav a.home {
+  color: red;
+}
+
 .fixing {
   height: 100%;
   background-color: var(--sec-color);
+}
+
+.my-nav .nav-item {
+  border: solid 1px transparent;
+}
+
+.my-nav .nav-item:hover {
+  border: solid 1px rgba(161, 161, 161, 0.787);
 }
 
 .my-nav .active {
@@ -241,35 +254,45 @@
   color: white;
 }
 
-.home-second .line-under::after {
-  background-color: white !important;
-}
-
 .home-second h3 {
   text-transform: uppercase;
   font-size: var(--h3-size);
   color: white;
+  font-family: "arial nova" !important;
 }
 
 .section-3-home {
   color: var(--sec-color);
-  background-color: #F3F7FF;
+  background-color: #f3f7ff;
 }
 
 .section-3-home .sec-button {
   color: var(--sec-color);
 }
 
-.my-under-line {
+.my-under-line-1 {
   height: 6px;
   width: 100%;
+  background-color: red;
+}
+
+.my-under-line-2 {
+  height: 6px;
+  width: 100%;
+  background-color: black;
+}
+
+.my-under-line-3 {
+  height: 6px;
+  width: 100%;
+  background-color: green;
 }
 
 .hidden-para {
   font-size: var(--para2-size) !important;
   height: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   overflow: hidden;
 }
 
@@ -285,8 +308,8 @@
 
 .my-progrmmes-inner a img {
   margin-top: -54px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
 }
 
@@ -311,28 +334,32 @@
 .our-team-container {
   position: relative;
   min-height: 350px;
+  color: white;
 }
 
 .our-team-container .over-lay {
+  right: 0;
+  left: 0;
   position: absolute;
   padding: 35px;
   text-align: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: .3s;
-  transition: .3s;
-  background-color: rgba(0, 0, 0, 0.411);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.658);
   opacity: 0;
+  z-index: 10;
 }
 
 .our-team-container .over-lay:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .our-team-container .over-lay .overlay-spacer {
   width: 94px;
   height: 11px;
-  background: red;
+  background: var(--sec-color);
   margin: auto;
   border-radius: 10px;
   margin-bottom: 23px;
@@ -344,6 +371,316 @@
   bottom: 10px;
   width: 100%;
   text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.our-team .owl-nav {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+
+.our-team .owl-nav button {
+  width: 30px;
+  height: 30px;
+  background: #dbdbdb !important;
+  margin-left: 8px;
+  color: black;
+}
+
+.our-team .owl-nav button:hover {
+  background-color: #8d8d8d !important;
+}
+
+.our-team .owl-nav button:focus {
+  outline: none;
+}
+
+.our-team h3 {
+  margin-top: 22px;
+  color: white;
+  font-family: "arial nova bold";
+}
+
+.our-team p {
+  color: #ffffffbd;
+}
+
+.our-team .over-lay img {
+  width: 40px;
+  display: inline;
+}
+
+.our-team .over-lay h4 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.contact-info-inner {
+  padding: 10px;
+  margin: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid 1px transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-left: 0;
+}
+
+.contact-info-inner img {
+  margin-right: 10px;
+}
+
+.contact-info-inner:hover {
+  border: solid 1px #00578d;
+  background-color: #00578d54;
+}
+
+.my-form label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.my-form .my-input {
+  border: none;
+  border-bottom: solid 1px white;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: wheat;
+  font-family: "arial rounded bold";
+}
+
+.my-form .my-input::-webkit-input-placeholder {
+  font-family: "arial nova";
+}
+
+.my-form .my-input:-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.my-form .my-input::-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.my-form .my-input::placeholder {
+  font-family: "arial nova";
+}
+
+.my-form .my-input:focus {
+  border-bottom: solid 1px green;
+  outline: none;
+}
+
+.home-contact {
+  color: white;
+}
+
+.home-contact h2 {
+  color: white !important;
+}
+
+.submit-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  text-decoration: none;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.news-letter {
+  color: white;
+}
+
+.news-letter h2 {
+  color: white !important;
+  font-size: var(--h2-size);
+}
+
+.news-letter img {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  margin-right: 16px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.news-letter .my-input {
+  border: none;
+  border-bottom: solid 1px white;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: wheat;
+  font-family: "arial rounded bold";
+  padding-top: 18px;
+}
+
+.news-letter .my-input::-webkit-input-placeholder {
+  font-family: "arial nova";
+}
+
+.news-letter .my-input:-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.news-letter .my-input::-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.news-letter .my-input::placeholder {
+  font-family: "arial nova";
+}
+
+.news-letter .my-input:focus {
+  border-bottom: solid 1px green;
+  outline: none;
+}
+
+.news-letter button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
+.news-letter button:hover {
+  text-decoration: none;
+}
+
+.news-letter button:focus {
+  outline: none;
+}
+
+.footer {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.footer button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer button:hover {
+  text-decoration: none;
+}
+
+.footer button:focus {
+  outline: none;
+}
+
+.footer .contact-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  color: white !important;
+}
+
+.footer .contact-link:hover {
+  text-decoration: none;
+}
+
+.footer .contact-link:focus {
+  outline: none;
+}
+
+.footer .secondary-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: lowercase !important;
+}
+
+.footer .secondary-button:hover {
+  text-decoration: none;
+}
+
+.footer .secondary-button:focus {
+  outline: none;
+}
+
+.footer .back-to-top-button img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  font-family: "arial nova bold";
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.footer ul {
+  margin-top: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  text-transform: uppercase;
+}
+
+.footer ul li a {
+  color: white;
+}
+
+.footer .hr {
+  margin-top: 20px;
+  background-color: white;
+  height: 1px;
+  width: 100%;
 }
 
 .bg-responsive {
@@ -351,20 +688,219 @@
   background-repeat: no-repeat;
 }
 
-.bg-1 {
+/* .bg-1 {
   background-color: red;
 }
-
 .bg-2 {
   background-color: yellow;
 }
-
 .bg-3 {
   background-color: green;
-}
-
+} */
 .bg-4 {
   background-image: url(../assets/img/home-page/img-1.png);
+}
+
+.bg-5 {
+  background-image: url(../assets/img/home-page/background-contact.jpg);
+}
+
+.bg-6 {
+  background-color: var(--sec-color);
+}
+
+.bg-7 {
+  background-image: url(../assets/img/home-page/background-footer.jpg);
+}
+
+.bg-8 {
+  background-image: url(../assets/img/home-page/background-footer.jpg);
+}
+
+.bg-9 {
+  background-color: #0d0d0d;
+}
+
+.bg-10 {
+  background-color: #002942;
+}
+
+.bg-11 {
+  background-image: url(../assets/img/our-programs/img-bann.jpg);
+}
+
+.bg-12 {
+  background-image: url(../assets/img/our-team/img-bann.jpg);
+}
+
+.bg-13 {
+  background-image: url(../assets/img/contact-us/img-bann.jpg);
+}
+
+.contact-form-part .my-input {
+  border: none;
+  border-bottom: solid 1px black;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: wheat;
+  font-family: "arial rounded bold";
+}
+
+.contact-form-part .my-input::-webkit-input-placeholder {
+  font-family: "arial nova";
+}
+
+.contact-form-part .my-input:-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.contact-form-part .my-input::-ms-input-placeholder {
+  font-family: "arial nova";
+}
+
+.contact-form-part .my-input::placeholder {
+  font-family: "arial nova";
+}
+
+.contact-form-part .my-input:focus {
+  border-bottom: solid 1px green;
+  outline: none;
+}
+
+.contact-form-part .submit-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px black;
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+}
+
+.contact-form-part .submit-btn:hover {
+  text-decoration: none;
+}
+
+.contact-form-part .submit-btn:focus {
+  outline: none;
+}
+
+.locations {
+  color: white;
+}
+
+.locations h3 {
+  color: #029fff;
+  text-transform: uppercase;
+}
+
+.my-international-number p {
+  font-family: "arial rounded bold";
+}
+
+.social-media-icons a {
+  padding: 10px;
+  margin-right: 10px;
+  border: solid 1px grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.social-media-icons img {
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
+  width: 15px;
+  height: 19px;
+}
+
+.team-section .social-media {
+  margin-top: 40px;
+}
+
+.get-in-touch h3,
+.get-in-touch p {
+  color: white;
+}
+
+.get-in-touch a {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
+.get-in-touch a:hover {
+  text-decoration: none;
+}
+
+.get-in-touch a:focus {
+  outline: none;
+}
+
+#reveal-members {
+  cursor: pointer;
+}
+
+.our-programs-main ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.our-programs-main ul li {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.our-programs-main ul li:hover {
+  border: none;
+  padding-left: 20px !important;
+  background: #0029416b;
+  border-radius: 7px;
+  color: white;
+}
+
+.our-programs-main ul .active-item {
+  border: none;
+  padding-left: 20px !important;
+  background: var(--sec-color);
+  border-radius: 7px;
+  color: white;
+  background-color: var(--sec-color) !important;
+}
+
+.our-programs-main .sticky-list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 130px;
+}
+
+.translated-content {
+  background: var(--sec-color);
+  color: white;
+  padding: 20px;
+  -webkit-transform: translateX(-18%);
+          transform: translateX(-18%);
+  width: 120%;
+}
+
+@media screen and (max-width: 992px) {
+  .translated-content {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    width: 100%;
+  }
 }
 
 body,
@@ -395,14 +931,22 @@ h3 {
 }
 
 .primary-button {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: solid 1px white;
   background-color: transparent;
   color: white;
+  text-transform: uppercase;
 }
 
 .primary-button:hover {
   text-decoration: none;
+}
+
+.primary-button:focus {
+  outline: none;
 }
 
 .sec-button {
@@ -422,16 +966,35 @@ h3 {
   text-decoration: none;
 }
 
-.line-under {
+.line-under-secColor {
   position: relative;
   display: inline;
+  color: var(--sec-color) !important;
 }
 
-.line-under::after {
+.line-under-secColor::after {
   content: "";
   height: 5px;
   width: 90px;
   background-color: var(--sec-color);
+  display: block;
+  margin-top: 8px;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+}
+
+.line-under-white {
+  position: relative;
+  display: inline;
+  color: white !important;
+}
+
+.line-under-white::after {
+  content: "";
+  height: 5px;
+  width: 90px;
+  background-color: white;
   display: block;
   margin-top: 8px;
   position: absolute;
@@ -445,6 +1008,42 @@ h3 {
 }
 
 .global-class p {
+  font-size: var(--para1-size);
+}
+
+.global-class h3 {
+  font-family: "arial rounded bold";
+  font-size: var(--h3-size);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.flesh-bleu {
+  color: var(--sec-color);
+}
+
+.small-para {
+  font-size: var(--para3-size) !important;
+}
+
+.my-banner {
+  color: white;
+  height: 60vh;
+}
+
+.my-banner h3 {
+  font-family: "arial rounded bold";
+  font-size: var(--h3-home);
+}
+
+.my-banner h1 {
+  font-family: "arial rounded bold";
+  font-size: var(--h2-size);
+}
+
+.my-banner p {
   font-size: var(--para1-size);
 }
 /*# sourceMappingURL=style.css.map */
