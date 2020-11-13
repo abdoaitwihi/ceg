@@ -1,7 +1,7 @@
 <div class="container">
    <nav class="navbar px-0 navbar-expand-lg my-nav">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.php">
          <img src="./assets/img/logo-blanc.png" alt="" />
       </a>
       <!-- Toggler/collapsibe Button -->

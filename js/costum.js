@@ -105,4 +105,13 @@ $(document).ready(function () {
       console.log("clicked");
       $(window).scrollTop(0);
    });
+   /* function to scroll to an element */
 });
+function scrollToTopOfForm(elemtToScrollTo) {
+   $([document.documentElement, document.body]).animate(
+      {
+         scrollTop: $(elemtToScrollTo).offset().top - 150,
+      },
+      1
+   );
+}

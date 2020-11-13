@@ -45,19 +45,19 @@
             <h3 class="text-center pt-4 pb-2">Connect with us !</h3>
             <div class="social-media-icons text-center">
                <a href="">
-                  <img src="./assets/img/contact-us/icon-linkedin.png" alt="" />
+                  <img src="./assets/img/contact-us/facebook.png" alt="" />
                </a>
                <a href="">
-                  <img src="./assets/img/contact-us/icon-youtube.png" alt="" />
+                  <img src="./assets/img/contact-us/instagram.png" alt="" />
                </a>
                <a href="">
-                  <img
-                     src="./assets/img/contact-us/icon-instagram.png"
-                     alt=""
-                  />
+                  <img src="./assets/img/contact-us/twitter.png" alt="" />
                </a>
                <a href="">
-                  <img src="./assets/img/contact-us/icon-facebook.png" alt="" />
+                  <img src="./assets/img/contact-us/youtube.png" alt="" />
+               </a>
+               <a href="">
+                  <img src="./assets/img/contact-us/linkedin.png" alt="" />
                </a>
             </div>
          </div>

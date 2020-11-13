@@ -7,7 +7,7 @@
          contulerunt in adventicium ora et provincialium.
       </p>
       <div class="text-center mt-4">
-         <a href="" class="sec-button">
+         <a href="./contact.php" class="sec-button">
             continue
             <img src="./assets/img/home-page/flesh.png" alt="" />
          </a>

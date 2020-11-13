@@ -20,42 +20,9 @@
             <div class="text-center pb-3">
                <h2 class="line-under line-under-white">Welcome to CEG</h2>
             </div>
-            <p class="col-lg-8 mx-auto my-2 mt-4">
-               Incolarum validis conpulit oppida imperator per imperator
-               incolarum nomine alio opima excursus conserta firmitate vicinarum
-               inter saltus inter veterum quoque.
-            </p>
-            <div class="row">
-               <div class="col-12 py-4">
-                  <iframe
-                     width="100%"
-                     height="500px"
-                     src="https://www.youtube.com/embed/nXU05IjSJzI"
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowfullscreen
-                  ></iframe>
-               </div>
-            </div>
-            <h3 class="py-4 text-center">
-               Quam viribus urbium concepta saeviore
-            </h3>
-            <p>
-               Plerosque possint et ignorantes qua sustentantur per ferina
-               penitus multiplices est alites et per lactisque caro herbae
-               lactisque ignorantes capi ferina et herbae abundans abundans
-               frumenti siquae qua siquae lactisque ferina est et universis
-               ignorantes alites per caro frumenti plerosque siquae est
-               lactisque ignorantes herbae copia multiplices alites capi vini et
-               copia multiplices et abundans est universis et abundans vini
-               herbae est vini siquae et copia caro usum copia per capi alites
-               per sustentantur frumenti plerosque alites ignorantes est vidimus
-               frumenti et vini et siquae alites possint caro per penitus
-               plerosque possint ignorantes copia siquae et possint ignorantes
-               ignorantes et.
-            </p>
+            <?php include "./includes/about-content-1.php"; ?>
             <div class="text-center mt-4">
-               <a href="" class="sec-button">
+               <a href="./about.php" class="sec-button">
                   continue <img src="./assets/img/home-page/flesh.png" alt="" />
                </a>
             </div>
@@ -141,7 +108,7 @@
                </div>
             </div>
             <div class="text-center mt-4">
-               <a href="" class="sec-button">
+               <a href="./programs.php" class="sec-button">
                   continue
                   <img src="./assets/img/home-page/flshe-bleu.png" alt="" />
                </a>
@@ -159,171 +126,10 @@
                inter saltus inter veterum quoque.
             </p>
             <div class="container pt-5 mt-2">
-               <div class="our-team owl-carousel">
-                  <div class="our-team-container bg-4 bg-responsive">
-                     <div class="over-lay">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                        <div class="overlay-spacer"></div>
-                        <h4>President Of CEG</h4>
-                        <div class="social-media">
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/ICON-facebook.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-linkedin.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-twitter.png"
-                                 alt=""
-                              />
-                           </a>
-                        </div>
-                     </div>
-                     <div class="first-info">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                     </div>
-                  </div>
-                  <div class="our-team-container bg-4 bg-responsive">
-                     <div class="over-lay">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                        <div class="overlay-spacer"></div>
-                        <h4>President Of CEG</h4>
-                        <div class="social-media">
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/ICON-facebook.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-linkedin.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-twitter.png"
-                                 alt=""
-                              />
-                           </a>
-                        </div>
-                     </div>
-                     <div class="first-info">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                     </div>
-                  </div>
-                  <div class="our-team-container bg-4 bg-responsive">
-                     <div class="over-lay">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                        <div class="overlay-spacer"></div>
-                        <h4>President Of CEG</h4>
-                        <div class="social-media">
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/ICON-facebook.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-linkedin.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-twitter.png"
-                                 alt=""
-                              />
-                           </a>
-                        </div>
-                     </div>
-                     <div class="first-info">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                     </div>
-                  </div>
-                  <div class="our-team-container bg-4 bg-responsive">
-                     <div class="over-lay">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                        <div class="overlay-spacer"></div>
-                        <h4>President Of CEG</h4>
-                        <div class="social-media">
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/ICON-facebook.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-linkedin.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-twitter.png"
-                                 alt=""
-                              />
-                           </a>
-                        </div>
-                     </div>
-                     <div class="first-info">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                     </div>
-                  </div>
-                  <div class="our-team-container bg-4 bg-responsive">
-                     <div class="over-lay">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                        <div class="overlay-spacer"></div>
-                        <h4>President Of CEG</h4>
-                        <div class="social-media">
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/ICON-facebook.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-linkedin.png"
-                                 alt=""
-                              />
-                           </a>
-                           <a href="">
-                              <img
-                                 src="./assets/img/home-page/icon-twitter.png"
-                                 alt=""
-                              />
-                           </a>
-                        </div>
-                     </div>
-                     <div class="first-info">
-                        <h3>JHONE HARRY</h3>
-                        <p>cej international offce</p>
-                     </div>
-                  </div>
-               </div>
+               <div class="our-team owl-carousel div-to-append-to-home"></div>
             </div>
             <div class="text-center mt-4">
-               <a href="" class="sec-button flesh-bleu">
+               <a href="./team.php" class="sec-button flesh-bleu">
                   continue
                   <img src="./assets/img/home-page/flshe-bleu.png" alt="" />
                </a>
@@ -377,6 +183,7 @@
       </div>
       <?php include "./includes/footer.php"; ?>
       <?php include "./includes/scripts.php"; ?>
+      <script src="./js/our-team.js"></script>
       <script>
          $(document).ready(function () {
             /* making an item active in the top carousel */

@@ -1,0 +1,66 @@
+.translated-content-2 {
+   @include translated-content(#efefef, var(--sec-color));
+}
+.items-to-select {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   text-align: center;
+   border: solid 1px black;
+   transition: 0.3s;
+   cursor: pointer;
+   height: 100%;
+   h2 {
+      font-size: 20px;
+      margin-top: 10px;
+   }
+   &:hover {
+      background-color: #0029418e;
+      h2 {
+         color: white;
+      }
+   }
+}
+.selected-item {
+   h2 {
+      color: white !important;
+   }
+   background-color: var(--sec-color);
+}
+.about-content-container {
+   margin-top: 56px;
+   margin-bottom: 56px;
+   .about-content {
+      height: 100%;
+      border: solid 1px black;
+      padding: 20px;
+   }
+}
+.about-content {
+   color: white;
+   background-color: var(--sec-color);
+   h2 {
+      color: white !important;
+   }
+}
+.our-comunity {
+   color: white;
+}
+.our-comunity-numbers {
+   .number {
+      display: block;
+      font-size: 26px;
+      font-family: "arial rounded bold" !important;
+   }
+   img {
+      width: 83px;
+      margin-bottom: 9px;
+   }
+}
+.about-team {
+   .sec-button {
+      color: var(--sec-color);
+   }
+   .small-para-2 {
+      font-size: 15px;
+   }
+}

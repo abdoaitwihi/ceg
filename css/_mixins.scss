@@ -15,8 +15,11 @@ $arialRoundedBold: "arial rounded bold";
    background-color: transparent;
    color: $borderAndColor;
    text-transform: uppercase;
+   transition: 0.3s;
    &:hover {
       text-decoration: none;
+      background-color: rgba(128, 128, 128, 0.39);
+      color: $borderAndColor;
    }
    &:focus {
       outline: none;
@@ -59,6 +62,7 @@ $arialRoundedBold: "arial rounded bold";
    padding: 20px;
    transform: translateX(-18%);
    width: 120%;
+   box-shadow: 0 0 53px black;
    @media screen and (max-width: 992px) {
       transform: translateX(0%);
       width: 100%;

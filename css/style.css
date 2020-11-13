@@ -19,7 +19,7 @@
   --third-color: #ee7425;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   :root {
     /* headings */
     --h1-home: 40px;
@@ -168,8 +168,9 @@
 }
 
 .my-nav .active {
-  border: solid 1px white;
+  border: solid 1px white !important;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 992px) {
@@ -494,10 +495,14 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .submit-btn:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .submit-btn:focus {
@@ -562,10 +567,14 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .news-letter button:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .news-letter button:focus {
@@ -586,10 +595,14 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer button:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .footer button:focus {
@@ -605,11 +618,15 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: white !important;
 }
 
 .footer .contact-link:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .footer .contact-link:focus {
@@ -625,6 +642,8 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 28px;
   padding-right: 20px;
   padding-left: 20px;
@@ -635,6 +654,8 @@
 
 .footer .secondary-button:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .footer .secondary-button:focus {
@@ -653,6 +674,7 @@
   color: white;
   font-family: "arial nova bold";
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .footer p {
@@ -737,6 +759,14 @@
   background-image: url(../assets/img/contact-us/img-bann.jpg);
 }
 
+.bg-14 {
+  background-image: url(../assets/img/about-us/img-ban.jpg);
+}
+
+.bg-15 {
+  background-image: url(../assets/img/about-us/img-our-communauty.jpg);
+}
+
 .contact-form-part .my-input {
   border: none;
   border-bottom: solid 1px black;
@@ -777,10 +807,14 @@
   background-color: transparent;
   color: black;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact-form-part .submit-btn:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: black;
 }
 
 .contact-form-part .submit-btn:focus {
@@ -800,20 +834,12 @@
   font-family: "arial rounded bold";
 }
 
-.social-media-icons a {
-  padding: 10px;
-  margin-right: 10px;
-  border: solid 1px grey;
+.social-media-icons img {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
 }
 
-.social-media-icons img {
-  -webkit-transform: translate(0px, -3px);
-          transform: translate(0px, -3px);
-  width: 15px;
-  height: 19px;
+.social-media-icons img:hover {
+  background-color: rgba(128, 128, 128, 0.376);
 }
 
 .team-section .social-media {
@@ -834,10 +860,14 @@
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .get-in-touch a:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .get-in-touch a:focus {
@@ -893,6 +923,8 @@
   -webkit-transform: translateX(-18%);
           transform: translateX(-18%);
   width: 120%;
+  -webkit-box-shadow: 0 0 53px black;
+          box-shadow: 0 0 53px black;
 }
 
 @media screen and (max-width: 992px) {
@@ -901,6 +933,100 @@
             transform: translateX(0%);
     width: 100%;
   }
+}
+
+.translated-content-2 {
+  background: #efefef;
+  color: var(--sec-color);
+  padding: 20px;
+  -webkit-transform: translateX(-18%);
+          transform: translateX(-18%);
+  width: 120%;
+  -webkit-box-shadow: 0 0 53px black;
+          box-shadow: 0 0 53px black;
+}
+
+@media screen and (max-width: 992px) {
+  .translated-content-2 {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    width: 100%;
+  }
+}
+
+.items-to-select {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border: solid 1px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.items-to-select h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.items-to-select:hover {
+  background-color: #0029418e;
+}
+
+.items-to-select:hover h2 {
+  color: white;
+}
+
+.selected-item {
+  background-color: var(--sec-color);
+}
+
+.selected-item h2 {
+  color: white !important;
+}
+
+.about-content-container {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.about-content-container .about-content {
+  height: 100%;
+  border: solid 1px black;
+  padding: 20px;
+}
+
+.about-content {
+  color: white;
+  background-color: var(--sec-color);
+}
+
+.about-content h2 {
+  color: white !important;
+}
+
+.our-comunity {
+  color: white;
+}
+
+.our-comunity-numbers .number {
+  display: block;
+  font-size: 26px;
+  font-family: "arial rounded bold" !important;
+}
+
+.our-comunity-numbers img {
+  width: 83px;
+  margin-bottom: 9px;
+}
+
+.about-team .sec-button {
+  color: var(--sec-color);
+}
+
+.about-team .small-para-2 {
+  font-size: 15px;
 }
 
 body,
@@ -939,10 +1065,14 @@ h3 {
   background-color: transparent;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .primary-button:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: white;
 }
 
 .primary-button:focus {
@@ -952,6 +1082,8 @@ h3 {
 .sec-button {
   text-transform: uppercase;
   color: white;
+  padding: 7px;
+  border-radius: 8px;
 }
 
 .sec-button img {
@@ -964,6 +1096,8 @@ h3 {
 
 .sec-button:hover {
   text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.349);
+  color: white;
 }
 
 .line-under-secColor {

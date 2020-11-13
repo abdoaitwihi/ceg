@@ -81,15 +81,6 @@
       <?php include "./includes/footer.php"; ?>
       <?php include "./includes/scripts.php"; ?>
       <script>
-         /* scrooling to a given element function */
-         function scrollToTopOfForm(elemtToScrollTo) {
-            $([document.documentElement, document.body]).animate(
-               {
-                  scrollTop: $(elemtToScrollTo).offset().top - 60,
-               },
-               1
-            );
-         }
          /* display the item that is clicked in the menu of Discover our programs */
          $(".menu-item").click(function (e) {
             e.preventDefault();

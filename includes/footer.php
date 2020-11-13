@@ -41,7 +41,7 @@
                distinctio?
             </p>
          </div>
-         <div class="col-md-6 col-lg-2">
+         <div class="col-md-6 col-lg-2 pl-5 pl-md-2">
             <h3>setup</h3>
             <ul>
                <li><a href=""> Home </a></li>
@@ -51,7 +51,7 @@
                <li><a href=""> Contact us </a></li>
             </ul>
          </div>
-         <div class="col-md-6 col-lg-2">
+         <div class="col-md-6 col-lg-2 pl-5 pl-md-2">
             <h3>social media</h3>
             <ul>
                <li><a href=""> Facebook </a></li>
@@ -61,14 +61,14 @@
                <li><a href=""> Youtube </a></li>
             </ul>
          </div>
-         <div class="col-md-6 col-lg-3">
+         <div class="col-md-6 col-lg-3 pl-5 pl-md-2">
             <h3>contact us</h3>
             <p>
                Lorem ipsum dolor <br />
                Lorem, ipsum dolor. <br />
                Lorem, ipsum.
             </p>
-            <a class="contact-link">contact us</a>
+            <a href="./contact.php" class="contact-link">contact us</a>
          </div>
       </div>
    </div>

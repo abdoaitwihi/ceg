@@ -41,8 +41,9 @@
       }
    }
    .active {
-      border: solid 1px white;
+      border: solid 1px white !important;
       margin-right: 10px;
+      margin-left: 10px;
       @media screen and (max-width: 992px) {
          padding-top: 6px;
          padding-bottom: 6px;

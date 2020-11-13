@@ -18,7 +18,7 @@
    --light-main-color: #fab6187e;
    --third-color: #ee7425;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
    :root {
       /* headings */
       --h1-home: 40px;
@@ -100,6 +100,7 @@
 @import "contactus";
 @import "team";
 @import "programs";
+@import "about";
 body,
 div {
    font-family: "arial nova light";
@@ -131,6 +132,8 @@ h3 {
 .sec-button {
    text-transform: uppercase;
    color: white;
+   padding: 7px;
+   border-radius: 8px;
    img {
       height: 9px;
       width: 26px;
@@ -139,6 +142,8 @@ h3 {
    }
    &:hover {
       text-decoration: none;
+      background-color: rgba(128, 128, 128, 0.349);
+      color: white;
    }
 }
 @mixin lineUnder($lineUnderColor) {
