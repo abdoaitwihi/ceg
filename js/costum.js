@@ -105,8 +105,8 @@ $(document).ready(function () {
       console.log("clicked");
       $(window).scrollTop(0);
    });
-   /* function to scroll to an element */
 });
+/* function to scroll to an element */
 function scrollToTopOfForm(elemtToScrollTo) {
    $([document.documentElement, document.body]).animate(
       {

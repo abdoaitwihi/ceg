@@ -4,9 +4,9 @@
    transition: 0.3s;
    nav {
       img {
-         height: 80px;
+         height: 60px;
          @media screen and (max-width: 576px) {
-            height: 75px;
+            height: 50px;
          }
          transition: 0.3s;
       }

@@ -207,3 +207,71 @@ a:hover {
       font-size: var(--para1-size);
    }
 }
+.mymap {
+   position: relative;
+   img {
+      width: 100%;
+      height: 100%;
+   }
+}
+.a-one {
+   @include map-anchor(9%, 6%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-two {
+   @include map-anchor(29%, 45%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-three {
+   @include map-anchor(11%, 44%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-four {
+   @include map-anchor(10%, 40%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-five {
+   @include map-anchor(26%, 8%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-sex {
+   @include map-anchor(18%, 36%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.a-seven {
+   @include map-anchor(11%, 44%, 15%, 15%);
+   //map-anchor(top, left, width, height );
+}
+.map-pin {
+   img {
+      height: 20px;
+      width: 20px;
+   }
+   cursor: pointer;
+   width: fit-content;
+   margin: auto;
+}
+.pop-over-map {
+   opacity: 0;
+   transition: 0.3s;
+   background-color: rgba(255, 255, 255, 0.774);
+   box-shadow: 0 0 5px black;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 6px;
+   color: black;
+   h2 {
+      margin: 0;
+      font-size: 21px;
+      text-align: center;
+   }
+   p {
+      margin: 0;
+      text-align: center;
+   }
+}
+.map-section {
+   background-color: #002941ab;
+}

@@ -126,14 +126,14 @@
 }
 
 .navigation nav img {
-  height: 80px;
+  height: 60px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 @media screen and (max-width: 576px) {
   .navigation nav img {
-    height: 75px;
+    height: 50px;
   }
 }
 
@@ -229,6 +229,12 @@
 
 .carousel-indicators {
   bottom: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-indicators {
+    bottom: 23px;
+  }
 }
 
 .carousel-indicators li {
@@ -1179,5 +1185,106 @@ a:hover {
 
 .my-banner p {
   font-size: var(--para1-size);
+}
+
+.mymap {
+  position: relative;
+}
+
+.mymap img {
+  width: 100%;
+  height: 100%;
+}
+
+.a-one {
+  position: absolute;
+  top: 9%;
+  left: 6%;
+  cursor: default;
+}
+
+.a-two {
+  position: absolute;
+  top: 29%;
+  left: 45%;
+  cursor: default;
+}
+
+.a-three {
+  position: absolute;
+  top: 11%;
+  left: 44%;
+  cursor: default;
+}
+
+.a-four {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  cursor: default;
+}
+
+.a-five {
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  cursor: default;
+}
+
+.a-sex {
+  position: absolute;
+  top: 18%;
+  left: 36%;
+  cursor: default;
+}
+
+.a-seven {
+  position: absolute;
+  top: 11%;
+  left: 44%;
+  cursor: default;
+}
+
+.map-pin {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.map-pin img {
+  height: 20px;
+  width: 20px;
+}
+
+.pop-over-map {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.774);
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  color: black;
+}
+
+.pop-over-map h2 {
+  margin: 0;
+  font-size: 21px;
+  text-align: center;
+}
+
+.pop-over-map p {
+  margin: 0;
+  text-align: center;
+}
+
+.map-section {
+  background-color: #002941ab;
 }
 /*# sourceMappingURL=style.css.map */

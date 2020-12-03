@@ -34,7 +34,7 @@
    <div class="container">
       <div class="row">
          <div class="col-md-6 col-lg-5">
-            <img src="./assets/img/home-page/logo-blanc.png" alt="" />
+            <img src="./assets/img/ceg-blanc.svg" width="270px" alt="" />
             <p class="col-lg-8">
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
                veritatis quos enim soluta quo vel aliquid placeat fugit! Dicta,

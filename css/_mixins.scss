@@ -68,3 +68,9 @@ $arialRoundedBold: "arial rounded bold";
       width: 100%;
    }
 }
+@mixin map-anchor($top, $left, $width: 10px, $height: 10px) {
+   position: absolute;
+   top: $top;
+   left: $left;
+   cursor: default;
+}

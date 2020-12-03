@@ -136,6 +136,10 @@
             </div>
          </div>
       </div>
+      <!-- image map -->
+      <?php include "./includes/img-map.php"; ?>
+      <!-- end of image map -->
+
       <div
          class="container-fluid global-class home-contact bg-5 bg-responsive py-5"
       >
@@ -181,6 +185,7 @@
             </div>
          </div>
       </div>
+
       <?php include "./includes/footer.php"; ?>
       <?php include "./includes/scripts.php"; ?>
       <script src="./js/our-team.js"></script>
@@ -190,5 +195,72 @@
             $(".active-indicator").addClass("active");
          });
       </script>
+      <script>
+         $(document).ready(function () {
+            function appedToMap(item) {
+               return `
+               <a class="${item.class}" href="${item.url}">
+            <div class="pop-over-map">
+               <h2>${item.h2}</h2>
+               <!-- <p>welcome home</p> -->
+            </div>
+            <div class="map-pin">
+               <img
+                  src="./assets/img/icon-etat-normal.svg"
+                  class="icon-survol d-none"
+                  alt=""
+               />
+               <img
+                  src="./assets/img/icon-etat-survol.svg"
+                  class="icon-normal"
+                  alt=""
+               />
+            </div>
+         </a>
+               `;
+            }
+            myItems = [
+               {
+                  url: "url",
+                  class: "a-one",
+                  h2: "Canada application",
+               },
+               {
+                  url: "url",
+                  class: "a-two",
+                  h2: "Turkish application",
+               },
+               {
+                  url: "url",
+                  class: "a-three",
+                  h2: "Finish application",
+               },
+               {
+                  url: "url",
+                  class: "a-four",
+                  h2: "Swedish application",
+               },
+               {
+                  url: "url",
+                  class: "a-five",
+                  h2: "USA application",
+               },
+               {
+                  url: "url",
+                  class: "a-sex",
+                  h2: "UK application",
+               },
+               {
+                  url: "url",
+                  class: "a-seven",
+                  h2: "Norway application",
+               },
+            ];
+            myItems.forEach((item) => {
+               $(".div-map").append(appedToMap(item));
+            });
+         });
+      </script>
+      <script src="./js/map.js"></script>
    </body>
 </html>
